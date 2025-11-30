@@ -5,6 +5,8 @@
 # For more details, please check https://github.com/bazelbuild/bazel/issues/18958
 ###############################################################################
 
+module(name = "com_monkeynova_text_table")
+
 bazel_dep(name = "abseil-cpp", version = "20250814.1")
 bazel_dep(name = "googletest", version = "1.17.0.bcr.2")
 bazel_dep(name = "re2", version = "2025-11-05")
