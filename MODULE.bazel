@@ -1,0 +1,27 @@
+###############################################################################
+# Bazel now uses Bzlmod by default to manage external dependencies.
+# Please consider migrating your external dependencies from WORKSPACE to MODULE.bazel.
+#
+# For more details, please check https://github.com/bazelbuild/bazel/issues/18958
+###############################################################################
+
+bazel_dep(name = "abseil-cpp", version = "20250814.1")
+bazel_dep(name = "googletest", version = "1.17.0.bcr.2")
+bazel_dep(name = "re2", version = "2025-11-05")
+bazel_dep(name = "rules_cc", version = "0.2.14")
+bazel_dep(name = "com_monkeynova_base_workspace")
+bazel_dep(name = "com_monkeynova_gunit_main")
+
+git_override(
+   module_name = "com_monkeynova_base_workspace",
+   remote = "https://github.com/monkeynova/base-workspace.git",
+   # branch = "main",
+   commit = "49867f63b311391d6ccdaf99b7e5cbc5b9750120",
+)
+
+git_override(
+    module_name = "com_monkeynova_gunit_main",
+    remote = "https://github.com/monkeynova/gunit-main.git",
+    # branch = "main",
+    commit = "8fd8b9206b3d802d859ad1b7eec7129ab849a60c",
+)
