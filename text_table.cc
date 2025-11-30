@@ -48,8 +48,6 @@ std::string AbslUnparseFlag(ColorType c) {
   return "<Bad ColorType>";
 }
 
-namespace advent_of_code {
-
 namespace {
 
 bool IsColorTerminal() {
@@ -303,5 +301,3 @@ void TextTable::Cell::Render(std::string* out, int width,
     out->append("\u001b[0m");
   }
 }
-
-}  // namespace advent_of_code

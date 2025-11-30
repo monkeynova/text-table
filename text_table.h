@@ -1,10 +1,8 @@
-#ifndef ADVENT_OF_CODE_INFRA_TEXT_TABLE_H
-#define ADVENT_OF_CODE_INFRA_TEXT_TABLE_H
+#ifndef TEXT_TABLE_H
+#define TEXT_TABLE_H
 
 #include <string>
 #include <vector>
-
-namespace advent_of_code {
 
 class TextTable {
  public:
@@ -39,6 +37,4 @@ class TextTable {
   std::vector<Row> rows_;
 };
 
-}  // namespace advent_of_code
-
-#endif  // ADVENT_OF_CODE_INFRA_TEXT_TABLE_H
+#endif  // TEXT_TABLE_HH
