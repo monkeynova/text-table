@@ -21,6 +21,7 @@ cc_test(
     srcs = ["text_table_test.cc"],
     deps = [
         ":text_table",
+        "@abseil-cpp//absl/flags:reflection",
         "@abseil-cpp//absl/strings",
         "@googletest//:gtest",
         "@com_monkeynova_gunit_main//:test_main",
